@@ -24,6 +24,16 @@ public class Personnage
         }
     }
 
+    public virtual void RecevoirDegats(int degats, int reduction)
+    {
+        degats -= reduction;
+        if (degats < 0)
+        {
+            degats = 0;
+        }
+        RecevoirDegats(degats);
+    }
+
     public virtual void Afficher()
     {
         Console.WriteLine($"Nom : {nom}");

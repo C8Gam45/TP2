@@ -12,4 +12,15 @@ Magicien magicien = new("Merlin", 80, 50);
 guerrier.Afficher();
 magicien.Afficher();
 
+Console.WriteLine("\n=== Partie 5 : Surcharge RecevoirDegats ===");
+Personnage p1 = new("TestNormal", 100);
+p1.RecevoirDegats(20);
+Console.WriteLine("Sans réduction :");
+p1.Afficher();
+
+Personnage p2 = new("TestReduction", 100);
+p2.RecevoirDegats(20, 10);
+Console.WriteLine("Avec réduction :");
+p2.Afficher();
+
 
