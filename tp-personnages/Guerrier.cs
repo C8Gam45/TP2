@@ -19,7 +19,6 @@ public class Guerrier : Personnage
 
     public override void Afficher()
     {
-        base.Afficher();
-        Console.WriteLine($"Armure : {armure}");
+        Console.WriteLine($"Guerrier : {nom}, PV : {pointsDeVie}, Armure : {armure}");
     }
 }
