@@ -11,4 +11,8 @@ public class Magicien : Personnage
     {
         Console.WriteLine($"Magicien : {nom}, PV : {pointsDeVie}, Puissance magique : {puissanceMagique}");
     }
+    public void Attaquer()
+    {
+        Console.WriteLine("Le magicien lance un sort");
+    }
 }
