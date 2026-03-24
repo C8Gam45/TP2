@@ -9,7 +9,7 @@ public class Personnage
         this.pointsDeVie = pointsDeVie;
     }
 
-    public void RecevoirDegats(int degats)
+    public virtual void RecevoirDegats(int degats)
     {
         if (degats < 0)
         {
@@ -24,7 +24,7 @@ public class Personnage
         }
     }
 
-    public void Afficher()
+    public virtual void Afficher()
     {
         Console.WriteLine($"Nom : {nom}");
         Console.WriteLine($"Points de vie : {pointsDeVie}");
