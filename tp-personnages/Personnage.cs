@@ -8,6 +8,7 @@ public class Personnage
         this.nom = nom;
         this.pointsDeVie = pointsDeVie;
     }
+   
 
     public virtual void RecevoirDegats(int degats)
     {

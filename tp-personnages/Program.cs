@@ -22,3 +22,10 @@ Personnage p2 = new("TestReduction", 100);
 p2.RecevoirDegats(20, 10);
 Console.WriteLine("Avec réduction :");
 p2.Afficher();
+
+foreach (Personnage p in personnages)
+{
+    p.Afficher();
+
+    p.Attaquer(); 
+}
